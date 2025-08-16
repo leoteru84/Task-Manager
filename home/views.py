@@ -1,14 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-
 # Create your views here.
-
-
-
-def tareas(request):
-    return HttpResponse("Dentro del de Tareas")
-
-
-
+def home(request):
+    return render(request, 'home.html')
 
