@@ -9,6 +9,13 @@
 <body>
     
     <div style="font-style: var(active); background-color: #f4999f; padding: 20px;">
+     <div>
+        <ul>
+            <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+            </li>
+        </ul>
+     </div>   
     <div class="container-fluid text-center">
         <h1 style="color: rgb(6, 0, 0);">TASK MANAGER</h1>
     </div>
@@ -16,10 +23,7 @@
     
     <nav> <!-- Navigation bar --> 
         <div class="container-fluid text-center">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
-                </li>
+            <ul class="nav justify-content-center">               
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'login' %}">Login</a>
                 </li>
