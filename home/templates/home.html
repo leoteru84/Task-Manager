@@ -8,32 +8,33 @@
 </head>
 <body>
     
-    <div style="font-style: var(active); background-color: #f4999f; padding: 20px;">
-     <div>
-        <ul>
-            <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
-            </li>
-        </ul>
-     </div>   
-    <div class="container-fluid text-center">
-        <h1 style="color: rgb(6, 0, 0);">TASK MANAGER</h1>
-    </div>
+    <div style="background-color: #c9c9c9; padding: 20px;">
+        
+        <div class="container-fluid text-left">
+           <a class="nav-link active "  aria-current="page" href="{% url 'home' %}">HOME</a>
+        </div>   
+        
+        <div class="container-fluid text-center">
+            <h1 style="color: rgb(6, 0, 0);">TASK MANAGER</h1>
+        </div>
+        <div class="col text-end">
+                <nav>  <!-- Navigation bar -->  
+                    <div >
+                        <ul class="nav justify-content-end">               
+                            <li class="nav-item">
+                                <a class="btn btn-primary" href="{% url 'login' %}">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-dark ms-2" href="{% url 'registro' %}">Register</a>
+                            </li>
+                        </ul>
+                    </div>  
+    
+                </nav>
+        </div>
     </div>
     
-    <nav> <!-- Navigation bar --> 
-        <div class="container-fluid text-center">
-            <ul class="nav justify-content-center">               
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'login' %}">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'registro' %}">Register</a>
-                </li>
-            </ul>
-        </div>  
- 
-    </nav>
+    
 
     {% block content %}
 
