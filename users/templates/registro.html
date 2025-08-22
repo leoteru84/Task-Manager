@@ -3,6 +3,30 @@
 
 {% block title %}Registro{% endblock %}
 
+{% block header %} 
+
+    <div style="background-color: #418a9d; padding: 20px;">
+
+            <div class="container-fluid text-center">
+                <h1 style="color: rgb(218, 217, 206);">TASK MANAGER</h1>
+            </div>
+            <div class="col text-end">
+                    <nav>  <!-- Navigation bar -->  
+                        <div>
+                            <ul class="nav justify-content-end">               
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-dark ms-2" href="{% url 'login' %}">Volver</a>
+                                </li>
+                            </ul>
+                        </div>  
+        
+                    </nav>
+            </div>
+        </div>
+
+
+{% endblock %}
+
 {% block content %}
 
 <div class="container-fluid text-center content-center"> 

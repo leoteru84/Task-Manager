@@ -8,6 +8,6 @@ from users import views as users_views
 
 urlpatterns = [
 
-    path("", views.home, name='home'),
+    path("", views.login, name='login'),
     
 ]
