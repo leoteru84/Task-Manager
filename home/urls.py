@@ -6,8 +6,3 @@ from users import views as users_views
 
 
 
-urlpatterns = [
-
-    path("", views.login, name='login'),
-    
-]
