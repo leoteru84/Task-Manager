@@ -87,7 +87,8 @@
         <div class="header">
             <h1 class="welcome">¡Bienvenido al Dashboard!, {{ request.user.username }}</h1>
             <div class="nav-links">
-                <a href="/Tareas/">Mis Tareas</a>
+                <a href="/Tareas/
+                ">Mis Tareas</a>
                 <a href="/">Cerrar Sesión</a>
             </div>
         </div>
@@ -96,7 +97,7 @@
             <div class="card">
                 <h3>📋 Gestión de Tareas</h3>
                 <p>Administra tus tareas pendientes, completas y en progreso.</p>
-                <a href="/Tareas/" class="btn">Ver Tareas</a>
+                <a href="{% url 'tareas' %}" class="btn">Ver Tareas</a>
             </div>
 
             <div class="card">

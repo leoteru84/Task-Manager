@@ -1,5 +1,4 @@
 from django.urls import path
-from . import views
 from users.views import CustomLoginView, dashboard, registro
 
 urlpatterns= [    
